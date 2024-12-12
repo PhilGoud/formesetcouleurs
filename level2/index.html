@@ -1,1 +1,29 @@
-
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeu des Formes et Couleurs</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a href="./.."> < Retour </a>
+  <div id="game-container">
+    <div><img class="logo" src="../logo.png"></div>
+    <div id="high-score">High Score: 0</div>
+    <div id="score">Score : 0</div>
+    <div id="timer">Time: 0s</div>
+    <div id="shape-container">
+        <button id="go">Go</button>
+      <div class="shape" id="current-shape"></div>
+    </div>
+    <div id="instruction">Instruction : Couleur ou Forme</div>
+    <div id="controls">
+      <span class="action" id="wrong">✖ ⬅</span>
+      <button id="restart" disabled>Nouvelle Partie</button>
+      <span class="action" id="correct">➡ ✔</span>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
