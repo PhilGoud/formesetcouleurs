@@ -1,5 +1,5 @@
 # formesetcouleurs
-Un petit jeu à 4 niveaux pour aider les gens qui ont des TDAH
+Un petit jeu à 4 niveaux pour aider les personnes TDAH
 
 Ce type d'activité oblige a inhiber des informations non essentielles pour se concentrer sur les infos essentielles (ici la forme ou la couleur). 
 Les personnes TDAH ayant souvent des troubles de l'inhibition, et cet exercice permet de s'entrainer ludiquement.
