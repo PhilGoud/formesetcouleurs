@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* Suppression du souslignage des liens */
+a {
+  text-decoration: none;
+  color: inherit; /* Garde la couleur par défaut du texte, ou vous pouvez la définir comme vous voulez */
+}
+
+/* Couleur du lien au survol */
+a:hover {
+  color: #004AAD!important; /* Remplacez par la couleur de votre choix */
+}
+
+/* Pas de changement de couleur pour les liens visités */
+a:visited {
+  color: inherit; /* Rétablit la couleur d'origine */
+}
+
+/* Optionnel : pour les liens actifs */
+a:active {
+  color: #004AAD; /* Vous pouvez mettre la même couleur ou une autre pour l'état actif */
+}
+
+
+.logo {
+  width: 100%;
+}
+#game-container {
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border: 5px solid #333;
+  background-color: #333;
+  border-radius: 10px;
+}
+
+#game-container.correct {
+  border-color: #00FF00;
+}
+
+#game-container.wrong {
+  border-color: #ff0000;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#instruction {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.levelselect {
+  background-color: whitesmoke;
+  color: #333;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 30px;
+}
+
+#restart, #go {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  height: 30px;
+}
+
+#restart:hover, #go:hover {
+  background-color: #0056b3;
+}
+
+#score {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+#shape-container {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.shape {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+.shapes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  justify-content: center;
+}
+
+.shape.circle {
+  border-radius: 50%;
+}
+
+.shape.square {
+  background-color: transparent;
+}
+
+.shape.triangle {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid;
+}
+
+#controls {
+  margin-top: 20px;
+  justify-content: space-between;
+  display: none;
+  align-items: center;
+}
+
+.action {
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+}
+
+
+
+.action:hover {
+  transform: scale(1.2);
+}
+
+#go {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#go:active {
+  background-color: #0056b3;
+}
+
+.shape {
+  display: none; /* Masqué par défaut */
+}
